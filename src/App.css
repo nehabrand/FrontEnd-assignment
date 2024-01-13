@@ -1,10 +1,49 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2vw; /* Use viewport width for padding */
+  background-color: #333;
+  color: #fff;
+}
+.home,
+.ports,
+.skills,
+.contactus {
+  font-weight: bold;
+  color: #fff;
+  margin-left: 2vw; /* Use viewport width for margin */
+}
+
+/* Adjust the margins based on the screen size */
+@media only screen and (min-width: 768px) {
+  .ports {
+    margin-left: 10vw;
+  }
+
+  .skills {
+    margin-left: 5vw;
+  }
+
+  .contactus {
+    margin-left: 10vw;
+  }
+}
+
 .App {
   text-align: center;
 }
 
 .App-logo {
-  height: 40vmin;
+  height: 15vw; /* Use viewport width for height */
   pointer-events: none;
+}
+
+/* Adjust logo animation based on the screen size */
+@media only screen and (min-width: 768px) {
+  .App-logo {
+    height: 10vw;
+  }
 }
 
 @media (prefers-reduced-motion: no-preference) {
@@ -18,14 +57,10 @@
   min-height: 100vh;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  
+  
   font-size: calc(10px + 2vmin);
   color: white;
-}
-
-.App-link {
-  color: #61dafb;
 }
 
 @keyframes App-logo-spin {
